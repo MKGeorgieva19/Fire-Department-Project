@@ -1,0 +1,104 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  background-color: #fff;
+}
+
+/* Navbar styling*/
+
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #264653;
+  color: white;
+}
+
+.logo {
+  font-size: 40px;
+  margin: 1vw 2vw;
+}
+
+.links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 3.5vh 3vw;
+  display: block;
+}
+
+.links li:hover {
+  background-color: #E63946;
+}
+
+.button {
+  position: absolute;
+  top: 3.5vh;
+  right: 4vw;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+@media (max-width: 1300px) {
+  .logo {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  .logo {
+    font-size: 30px;
+    padding: 2vh 0;
+  }
+
+  .button{
+    top: 3.5vh;
+    display: flex;
+  }
+
+  .links{
+    display: none;
+    background-color: #305a6b;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .links li {
+    text-align: center;
+  }
+
+  .links li a {
+    padding: 2vh 1vw;
+  }
+
+  .links.active {
+    display: flex;
+  }
+}
+
+/* End of Navbar styling*/
