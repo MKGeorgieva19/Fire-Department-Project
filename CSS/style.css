@@ -20,7 +20,9 @@ body {
 .logo {
   font-size: 40px;
   margin: 1vw 2vw;
+  text-shadow: 0px -10px 11px #E63946;
 }
+
 
 .links ul {
   margin: 0;
