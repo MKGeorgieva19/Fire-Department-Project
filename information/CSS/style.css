@@ -1,0 +1,428 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.container{
+  width: 100%;
+  height: 110vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/sunset-at-the-city-hd-1080P-wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+h1{
+  color: #fff;
+  font-size: 100px;
+  position:relative;
+  left: 10px;
+}
+
+p{
+  color: #fff;
+  font-size: 16px;
+  line-height: 15px;
+  position:relative;
+  
+}
+
+button{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px; 
+  position:relative;
+  left: 15px;
+}
+
+/* The maps for the different sections*/
+
+/* Set the size of the div element that contains the map */
+
+
+
+/* The counter effect of the site */
+
+.counters1::after {
+  font: 800 40px system-ui;
+  content: counter(count);
+  animation: counter 100s linear infinite alternate;
+  counter-reset: count 0;
+  color: white;
+}
+
+@keyframes counter {
+  0%  {counter-increment: count 1507;}
+  5%  {counter-increment: count 1504;}
+  10% {counter-increment: count 1510;}
+  15% {counter-increment: count 1518;}
+  20% {counter-increment: count 1512;}
+  25% {counter-increment: count 1520;}
+  30% {counter-increment: count 1500;}
+  35% {counter-increment: count 1501;}
+  40% {counter-increment: count 1507;}
+  45% {counter-increment: count 1495;}
+  50% {counter-increment: count 1530;}
+  55% {counter-increment: count 1512;}
+  60% {counter-increment: count 1537;}
+  65% {counter-increment: count 1522;}
+  70% {counter-increment: count 1543;}
+  75% {counter-increment: count 1523;}
+  80% {counter-increment: count 1567;}
+  85% {counter-increment: count 1512;}
+  90% {counter-increment: count 1521;}
+  95% {counter-increment: count 1513;}
+  100% {counter-increment: count 1526;}
+}
+
+.counters2::after {
+  font: 800 40px system-ui;
+  content: counter(count);
+  animation: counter2 100s linear infinite alternate;
+  counter-reset: count 0;
+  color: white;
+}
+
+@keyframes counter2 {
+  0%  {counter-increment: count 107;}
+  5%  {counter-increment: count 104;}
+  10% {counter-increment: count 110;}
+  15% {counter-increment: count 118;}
+  20% {counter-increment: count 112;}
+  25% {counter-increment: count 120;}
+  30% {counter-increment: count 100;}
+  35% {counter-increment: count 101;}
+  40% {counter-increment: count 107;}
+  45% {counter-increment: count 195;}
+  50% {counter-increment: count 130;}
+  55% {counter-increment: count 112;}
+  60% {counter-increment: count 137;}
+  65% {counter-increment: count 122;}
+  70% {counter-increment: count 143;}
+  75% {counter-increment: count 123;}
+  80% {counter-increment: count 167;}
+  85% {counter-increment: count 112;}
+  90% {counter-increment: count 121;}
+  95% {counter-increment: count 113;}
+  100% {counter-increment: count 126;}
+}
+
+ /* The info cards on the right */
+ 
+.card{
+  position:relative;
+  right: -10%;
+  width: 290px;
+  height: 320px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display:inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  text-align:center;
+}
+
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col{
+  flex-basis: 50%;
+}
+
+.card1{
+  background-image: url(../img/background.jpg);
+}
+
+.card2{
+  background-image: url(../img/background2.jpg);
+}
+
+.card3{
+  background-image: url(../img/background3.jpg);
+}
+
+.card4{
+  background-image: url(../img/background4.jpg);
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.card p{
+  text-shadow: 0 0 5px #000;
+  font-size: 10px;
+  text-align: center;
+}
+
+h5{
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  text-align: center;
+}
+
+/* Sections */
+
+section{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+#sec-1{
+  background-color: #A8DADC;
+}
+
+#sec-2{
+  background-color: #305a6b;
+}
+
+#sec-3{
+  background-color: #A8DADC;
+}
+
+#sec-4{
+  background-color: #305a6b;
+}
+
+.cardbig{
+  position:relative;
+  top: 25%;
+  width: 390px;
+  height: 420px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display:inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  text-align:center;
+}
+
+.cardbig:hover{
+  transform: translateY(-10px);
+}
+
+/* These are the dots on the right side */
+html{
+  scroll-behavior: smooth;
+}
+
+.navsidebar{
+  position: relative;
+  right: 1%;
+  position: fixed;
+}
+
+.navdotssec{
+  width: 20px;
+  height: 20px;
+  border: 6px solid white;
+  border-radius: 10px;
+  position: relative;
+  text-shadow: 0 0 5px #999;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.5s;
+}
+
+.navdotssec:hover{
+  transform: translateX(+10px);
+}
+
+/* Navbar styling*/
+
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #264653;
+  color: white;
+}
+
+.logo {
+  font-size: 40px;
+  margin: 1vw 2vw;
+  text-shadow: 0px -10px 11px #E63946;
+}
+
+
+.links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 3.5vh 3vw;
+  display: block;
+}
+
+.links li:hover {
+  background-color: #E63946;
+}
+
+.button {
+  position: absolute;
+  top: 3.5vh;
+  right: 4vw;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+/* responsive changes */
+
+@media (max-width: 1300px) {
+  .card{
+  position:relative;
+    top: 25px;
+    right: -10%;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display:inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  }
+  .counters1::after {
+    font: 400 20px system-ui;
+    content: counter(count);
+    animation: counter 100s linear infinite alternate;
+    counter-reset: count 0;
+    color: white;
+  }
+  .counters2::after {
+    font: 400 20px system-ui;
+    content: counter(count);
+    animation: counter2 100s linear infinite alternate;
+    counter-reset: count 0;
+    color: white;
+  }
+}
+
+@media (max-width: 920px) {
+  .card{
+  position:relative;
+  right: 1%;
+  top: -5%;
+  width: 190px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display:inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  }
+  .cardbig{
+    position:relative;
+    top: 25%;
+    width: 290px;
+    height: 420px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display:inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    text-align:center;
+  }
+  .card p{
+    text-shadow: 0 0 5px #000;
+    font-size: 7px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .logo {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 30px;
+    padding: 2vh 0;
+  }
+
+  .button{
+    top: 3.5vh;
+    display: flex;
+  }
+
+  .links{
+    display: none;
+    background-color: #624388;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .links li {
+    text-align: center;
+  }
+
+  .links li a {
+    padding: 2vh 1vw;
+  }
+
+  .links.active {
+    display: flex;
+  }
+}
+
+/* End of Navbar styling*/
+
