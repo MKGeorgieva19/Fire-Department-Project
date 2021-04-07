@@ -104,3 +104,23 @@ body {
 }
 
 /* End of Navbar styling*/
+
+#welcome_text {
+  text-align: center;
+  color: #E63946;
+}
+
+/* News styling*/
+
+.news {
+  color: #fff;
+  margin: 10vh;
+  padding: 2vw;
+  background-color: #A8DADC;
+}
+
+.news a {
+  text-decoration: none;
+}
+
+/* End of news styling*/
