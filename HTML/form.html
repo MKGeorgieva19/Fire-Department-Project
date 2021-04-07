@@ -24,6 +24,76 @@
       </div>
     </nav>
 
+    <form method="POST">
+      <h1>Регистрация</h1>
+
+      <p>* Форма за регистриране на произшествие.</p>
+
+      <div class="registration_form">
+
+        <div class="inputfield">
+          <label for="name">Име</label>
+          <input type="text" name="name" id="name">
+        </div>  
+
+        <div class="inputfield">
+          <label for="email">Имейл</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <div class="inputfield">
+          <label for="address">Адрес</label>
+          <textarea name="address" id="address"></textarea>
+        </div> 
+
+        <div class="inputfield">
+          <label for="accident_type">Тип произшествие</label>
+          <input type="text" name="accident_type" id="accident_type">
+        </div> 
+
+        <div class="inputfield">
+          <label for="team">Екип</label>
+          <div class="custom_select">
+            <select name="team" id="team">
+              <option value="">Избери екип</option>
+              <option value="option1">Екип1</option>
+              <option value="option2">Екип2</option>
+              <option value="option3">Екип3</option>
+            </select>
+          </div>
+        </div> 
+
+        <div class="inputfield">
+          <label for="vehicle">Автомобил</label>
+          <div class="custom_select">
+            <select name="vehicle" id="vehicle">
+              <option value="">Избери автомобил</option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+            </select>
+          </div>
+        </div> 
+
+        <div class="inputfield">
+          <label for="phone">Телефон</label>
+          <input type="text" name="phone" id="phone">
+        </div> 
+        
+        <div class="inputfield terms">
+            <label class="check" for="check">
+              <input type="checkbox" name="check">
+              <span class="checkmark"></span>
+            </label>
+            <p>Agreed to terms and conditions</p>
+         </div> 
+
+        <div class="inputfield">
+          <input type="submit" value="Register" class="btn" name="submit">
+        </div>
+      </div>
+  	</form> 
+
     <footer>
       <table>
         <tr>
