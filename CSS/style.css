@@ -110,6 +110,18 @@ body {
   color: #E63946;
 }
 
+@media (max-width: 1400px) {
+  #welcome_text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  #welcome_text {
+    font-size: 10px;
+  }
+}
+
 /* Page content styling*/
 
 .content1 {
@@ -124,6 +136,7 @@ body {
 }
 
 .container1 {
+  font-size: 20px;
   position: absolute;
   left: 0;
   background-color: #305a6b;
@@ -142,10 +155,87 @@ body {
   height: 180px;
 }
 
+.container2 h2{
+  font-size: 25px;
+}
+
+.container2 p{
+  font-size: 17px;
+}
+
 .container2 img {
   height: 15px;
   width: 15px;
 }
+
+@media (max-width: 1600px)
+{
+  .container1 {
+    font-size: 17px;
+  }
+
+  .container2 h2{
+    font-size: 22px;
+  }
+
+  .container2 p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container1 {
+    font-size: 15px;
+  }
+
+  .container2 h2{
+    font-size: 20px;
+  }
+
+  .container2 p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container1{
+    font-size: 10px;
+    height: 130px;
+  }
+
+  .container2{
+    height: 130px;
+  }
+
+  .container2 h2{
+    font-size: 13px;
+  }
+
+  .container2 p{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container1 {
+    font-size: 7px;
+    height: 100px;
+  }
+
+  .container2{
+    height: 100px;
+  }
+
+  .container2 h2{
+    font-size: 10px;
+  }
+
+  .container2 p{
+    font-size: 8px;
+  }
+}
+
+/* End of Footer styling*/
 
 /* End of content styling*/
 
