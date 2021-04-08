@@ -110,20 +110,44 @@ body {
   color: #E63946;
 }
 
-/* News styling*/
+/* Page content styling*/
 
-.news {
+.content1 {
+  position: relative;
+  display: flex;
   color: #fff;
-  margin: 10vh;
-  padding: 2vw;
+  margin: 5vh;
+  padding: 30vw 2vw 2vw 2vw;
+  background-image: url("..\\Images/burgas_firedepartment.jpg");
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+.container1 {
+  position: absolute;
+  left: 0;
+  background-color: #305a6b;
+  padding: 10px 10px 10px 10px;
+  width: 30vw;
+  height: 180px;
+}
+
+.container2 {
+  position: absolute;
+  left: 31vw;
   background-color: #A8DADC;
+  width: 20vw;
+  padding: 10px 10px 10px 10px;
+  width: 20vw;
+  height: 180px;
 }
 
-.news a {
-  text-decoration: none;
+.container2 img {
+  height: 15px;
+  width: 15px;
 }
 
-/* End of news styling*/
+/* End of content styling*/
 
 /* Footer styling*/
 
