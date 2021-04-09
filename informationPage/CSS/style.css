@@ -229,6 +229,10 @@ section{
   text-align:center;
 }
 
+.BackgroundSec-1{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/sec-1.jpg);
+}
+
 .cardbig:hover{
   transform: translateY(-10px);
 }
