@@ -33,30 +33,16 @@ p{
   
 }
 
-button{
-  width: 180px;
-  color: #000;
-  font-size: 12px;
-  padding: 12px 0;
-  background: #fff;
-  border: 0;
-  border-radius: 20px;
-  outline: none;
-  margin-top: 30px; 
-  position:relative;
-  left: 15px;
-}
-
-/* The maps for the different sections*/
-
 /* Set the size of the div element that contains the map */
 
 iframe{
   position: relative;
-  left: 40%;
+ margin-right: 50px;
   margin-top: 10%;
-  border: white solid 5px;
+  border: rgb(255, 115, 0) solid 5px;
   border-radius: 20px;
+  width: 500px; 
+  height: 500px;
   
 }
 
@@ -125,6 +111,10 @@ iframe{
   95% {counter-increment: count 113;}
   100% {counter-increment: count 126;}
 }
+
+/* font of name changer */
+
+
 
  /* The info cards on the right */
  
@@ -197,19 +187,35 @@ section{
 }
 
 #sec-1{
-  background-color: #A8DADC;
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/sec-1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #sec-2{
-  background-color: #305a6b;
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/sec-2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #sec-3{
-  background-color: #A8DADC;
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/sec-3.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #sec-4{
-  background-color: #305a6b;
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/sec-4.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .cardbig{
@@ -237,7 +243,45 @@ section{
   transform: translateY(-10px);
 }
 
-/* These are the dots on the right side */
+.Section-text{
+  color: rgb(255, 115, 0);
+  position: relative;
+  margin-left: 490px;
+  top: -15%;
+}
+
+.Section-img img{
+  position: relative;
+  margin-left: 450px;
+  width: 60%;
+  height: 60%;
+  border: 6px solid rgb(255, 115, 0);
+  border-radius: 15px;
+  margin-top: -125px;
+  text-shadow: 0 0 10px red;
+}
+
+.Section-4-text{
+  color: #e53945;
+  position: relative;
+  margin-left: 550px;
+  top: -10%;
+  font-size: 40px;
+  text-shadow: 0 0 10px red;
+  text-align: center;
+}
+
+#sequence{
+  position: relative;
+  margin-left: 900px;
+  font-size: 70px;
+  text-shadow: 0 0 10px red;
+  font-weight: bold;
+  top: -5%;
+  color: #e53945;
+}
+
+/* The navigation dots on the right side */
 html{
   scroll-behavior: smooth;
 }
@@ -316,7 +360,42 @@ html{
 }
 /* responsive changes */
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  .card{
+  position:relative;
+    top: 25px;
+    right: -10%;
+  width: 220px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display:inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  }
+  .counters1::after {
+    font: 400 20px system-ui;
+    content: counter(count);
+    animation: counter 100s linear infinite alternate;
+    counter-reset: count 0;
+    color: white;
+  }
+  .counters2::after {
+    font: 400 20px system-ui;
+    content: counter(count);
+    animation: counter2 100s linear infinite alternate;
+    counter-reset: count 0;
+    color: white;
+  }
+
+  
+}
+
+@media (max-width: 1320px) {
   .card{
   position:relative;
     top: 25px;
@@ -347,9 +426,19 @@ html{
     counter-reset: count 0;
     color: white;
   }
+  iframe{
+    position: relative;
+    left: 30%;
+    margin-top: 22%;
+    border: white solid 5px;
+    border-radius: 20px;
+    width: 300px; 
+    height: 300px;
+    
+  }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1050px) {
   .card{
   position:relative;
   right: 1%;
@@ -369,8 +458,8 @@ html{
   .cardbig{
     position:relative;
     top: 25%;
-    width: 290px;
-    height: 420px;
+    width: 190px;
+    height: 300px;
     border-radius: 10px;
     padding: 15px 25px;
     display:inline-block;
@@ -386,6 +475,21 @@ html{
     text-shadow: 0 0 5px #000;
     font-size: 7px;
     text-align: center;
+  }
+  iframe{
+    position: relative;
+    left: 20%;
+    margin-top: 35%;
+    border: white solid 5px;
+    border-radius: 20px;
+    width: 200px; 
+    height: 200px;
+    
+  }
+  .navsidebar{
+    position: relative;
+    right: 5%;
+    position: fixed;
   }
 }
 
