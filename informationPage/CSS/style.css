@@ -57,27 +57,27 @@ iframe{
 }
 
 @keyframes counter {
-  10%  {counter-increment: count 1516;}
-  5%  {counter-increment: count 1502;}
-  0% {counter-increment: count 1510;}
-  15% {counter-increment: count 1595;}
-  20% {counter-increment: count 1532;}
-  25% {counter-increment: count 1540;}
-  30% {counter-increment: count 1500;}
-  35% {counter-increment: count 1557;}
-  80% {counter-increment: count 1507;}
-  45% {counter-increment: count 1495;}
-  50% {counter-increment: count 1530;}
-  55% {counter-increment: count 1517;}
-  60% {counter-increment: count 1537;}
-  65% {counter-increment: count 1542;}
-  70% {counter-increment: count 1543;}
-  75% {counter-increment: count 1523;}
-  40% {counter-increment: count 1587;}
-  85% {counter-increment: count 1512;}
-  90% {counter-increment: count 1521;}
-  95% {counter-increment: count 1513;}
-  100% {counter-increment: count 1576;}
+  10%  {counter-increment: count 116;}
+  5%  {counter-increment: count 102;}
+  0% {counter-increment: count 110;}
+  15% {counter-increment: count 195;}
+  20% {counter-increment: count 132;}
+  25% {counter-increment: count 140;}
+  30% {counter-increment: count 100;}
+  35% {counter-increment: count 157;}
+  80% {counter-increment: count 107;}
+  45% {counter-increment: count 195;}
+  50% {counter-increment: count 130;}
+  55% {counter-increment: count 117;}
+  60% {counter-increment: count 137;}
+  65% {counter-increment: count 142;}
+  70% {counter-increment: count 143;}
+  75% {counter-increment: count 123;}
+  40% {counter-increment: count 187;}
+  85% {counter-increment: count 112;}
+  90% {counter-increment: count 121;}
+  95% {counter-increment: count 113;}
+  100% {counter-increment: count 176;}
 }
 
 .counters2::after {
@@ -89,27 +89,27 @@ iframe{
 }
 
 @keyframes counter2 {
-  0%  {counter-increment: count 107;}
-  5%  {counter-increment: count 104;}
-  10% {counter-increment: count 110;}
-  15% {counter-increment: count 118;}
-  20% {counter-increment: count 112;}
-  25% {counter-increment: count 120;}
-  30% {counter-increment: count 100;}
-  35% {counter-increment: count 101;}
-  40% {counter-increment: count 107;}
-  45% {counter-increment: count 195;}
-  50% {counter-increment: count 130;}
-  55% {counter-increment: count 112;}
-  60% {counter-increment: count 137;}
-  65% {counter-increment: count 122;}
-  70% {counter-increment: count 143;}
-  75% {counter-increment: count 123;}
-  80% {counter-increment: count 167;}
-  85% {counter-increment: count 112;}
-  90% {counter-increment: count 121;}
-  95% {counter-increment: count 113;}
-  100% {counter-increment: count 126;}
+  0%  {counter-increment: count 17;}
+  5%  {counter-increment: count 14;}
+  10% {counter-increment: count 10;}
+  15% {counter-increment: count 18;}
+  20% {counter-increment: count 12;}
+  25% {counter-increment: count 10;}
+  30% {counter-increment: count 10;}
+  35% {counter-increment: count 11;}
+  40% {counter-increment: count 17;}
+  45% {counter-increment: count 15;}
+  50% {counter-increment: count 10;}
+  55% {counter-increment: count 12;}
+  60% {counter-increment: count 17;}
+  65% {counter-increment: count 12;}
+  70% {counter-increment: count 13;}
+  75% {counter-increment: count 13;}
+  80% {counter-increment: count 17;}
+  85% {counter-increment: count 12;}
+  90% {counter-increment: count 11;}
+  95% {counter-increment: count 13;}
+  100% {counter-increment: count 16;}
 }
 
 /* font of name changer */
