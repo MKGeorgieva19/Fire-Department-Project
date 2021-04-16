@@ -38,40 +38,40 @@
         </div>  
 
         <div class="inputfield">
-          <label for="email">Имейл</label>
-          <input type="email" name="email" id="email">
+          <label for="email">Имейл*</label>
+          <input type="email" name="email" id="email" required>
         </div>
 
         <div class="inputfield">
-          <label for="address">Адрес</label>
-          <textarea name="address" id="address"></textarea>
+          <label for="address">Адрес*</label>
+          <textarea name="address" id="address" required></textarea>
         </div> 
 
         <div class="inputfield">
-          <label for="accident_type">Тип произшествие</label>
-          <input type="text" name="accident_type" id="accident_type">
+          <label for="accident_type">Тип произшествие*</label>
+          <input type="text" name="accident_type" id="accident_type" required>
         </div> 
 
         <div class="inputfield">
-          <label for="team">Екип</label>
+          <label for="team">Екип*</label>
           <div class="custom_select">
-            <select name="team" id="team">
-              <option value="">Избери екип</option>
-              <option value="option1">Екип1</option>
-              <option value="option2">Екип2</option>
-              <option value="option3">Екип3</option>
+            <select name="team" id="team" required>
+              <option value="default">Избери екип</option>
+              <option value="option1">Екип 1</option>
+              <option value="option2">Екип 2</option>
+              <option value="option3">Екип 3</option>
             </select>
           </div>
         </div> 
 
         <div class="inputfield">
-          <label for="vehicle">Автомобил</label>
+          <label for="vehicle">Автомобил/и*</label>
           <div class="custom_select">
-            <select name="vehicle" id="vehicle">
-              <option value="">Избери автомобил</option>
-              <option value="option1">1</option>
-              <option value="option2">2</option>
-              <option value="option3">3</option>
+            <select name="vehicle" id="vehicle" required>
+              <option value="default">Избери автомобил/и</option>
+              <option value="option1">Пожарна</option>
+              <option value="option2">Две Пожарни</option>
+              <option value="option3">Пожарна + Линейка</option>
             </select>
           </div>
         </div> 
@@ -86,11 +86,11 @@
               <input type="checkbox" name="check">
               <span class="checkmark"></span>
             </label>
-            <p>Agreed to terms and conditions</p>
+            <p>Искам да получавам известия по имейл</p>
          </div> 
 
         <div class="inputfield">
-          <input type="submit" value="Register" class="btn" name="submit">
+          <input type="submit" value="Регистрирай" class="btn" name="submit">
         </div>
       </div>
   	</form> 
