@@ -13,7 +13,7 @@
 .container{
   width: 100%;
   height: 110vh;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/sunset-at-the-city-hd-1080P-wallpaper.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/SectionBackgrounds/sunset-at-the-city-hd-1080P-wallpaper.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -38,12 +38,12 @@ p{
 iframe{
   position: relative;
  margin-right: 50px;
-  margin-top: 10%;
-  border: rgb(255, 115, 0) solid 5px;
+  margin-top: 11%;
+  border: #e53945 solid 5px;
   border-radius: 20px;
   width: 500px; 
   height: 500px;
-  
+  box-shadow: 0 0 20px #e53945;
 }
 
 /* The counter effect of the site */
@@ -133,6 +133,8 @@ iframe{
   background-size: cover;
   transition: transform 0.5s;
   text-align:center;
+  box-shadow: 0 0 10px #e53945;
+  
 }
 
 .row{
@@ -146,19 +148,19 @@ iframe{
 }
 
 .card1{
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/Cards/background.jpg);
 }
 
 .card2{
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/Cards/background2.jpg);
 }
 
 .card3{
-  background-image: url(../img/background3.jpg);
+  background-image: url(../img/Cards/background3.jpg);
 }
 
 .card4{
-  background-image: url(../img/background4.jpg);
+  background-image: url(../img/Cards/background4.jpg);
 }
 
 .card:hover{
@@ -189,7 +191,7 @@ section{
 #sec-1{
   width: 100%;
   height: 110vh;
-  background-image: url(../img/sec-1.jpg);
+  background-image: url(../img/SectionBackgrounds/sec-1.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -197,7 +199,7 @@ section{
 #sec-2{
   width: 100%;
   height: 110vh;
-  background-image: url(../img/sec-2.jpg);
+  background-image: url(../img/SectionBackgrounds/sec-2.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -205,7 +207,7 @@ section{
 #sec-3{
   width: 100%;
   height: 110vh;
-  background-image: url(../img/sec-3.jpg);
+  background-image: url(../img/SectionBackgrounds/sec-3.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -213,7 +215,7 @@ section{
 #sec-4{
   width: 100%;
   height: 110vh;
-  background-image: url(../img/sec-4.jpg);
+  background-image: url(../img/SectionBackgrounds/sec-4.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -233,10 +235,11 @@ section{
   background-size: cover;
   transition: transform 0.5s;
   text-align:center;
+  box-shadow: 0 0 20px #e53945;
 }
 
 .BackgroundSec-1{
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/sec-1.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/SectionBackgrounds/sec-1.jpg);
 }
 
 .cardbig:hover{
@@ -244,41 +247,43 @@ section{
 }
 
 .Section-text{
-  color: rgb(255, 115, 0);
+  color: #fff;
   position: relative;
-  margin-left: 490px;
+  margin-left: 570px;
   top: -15%;
+  text-shadow: 0 0 2px #fff;
+  font-size: 15px;
 }
 
 .Section-img img{
   position: relative;
-  margin-left: 450px;
+  margin-left: 510px;
   width: 60%;
   height: 60%;
-  border: 6px solid rgb(255, 115, 0);
+  border: 6px solid #e53945;
   border-radius: 15px;
   margin-top: -125px;
-  text-shadow: 0 0 10px red;
+  box-shadow: 0 0 20px #e53945;
 }
 
 .Section-4-text{
-  color: #e53945;
+  color: #fff;
   position: relative;
   margin-left: 550px;
   top: -10%;
   font-size: 40px;
-  text-shadow: 0 0 10px red;
+  text-shadow: 0 0 5px #fff;
   text-align: center;
 }
 
 #sequence{
   position: relative;
-  margin-left: 900px;
+  margin-left: 830px;
   font-size: 70px;
-  text-shadow: 0 0 10px red;
+  text-shadow: 0 0 5px #fff;
   font-weight: bold;
   top: -5%;
-  color: #e53945;
+  color: #fff;
 }
 
 /* The navigation dots on the right side */
