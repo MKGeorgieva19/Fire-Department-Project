@@ -1,316 +1,15 @@
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-.container{
-  width: 100%;
-  height: 110vh;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/SectionBackgrounds/sunset-at-the-city-hd-1080P-wallpaper.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-h1{
-  color: #fff;
-  font-size: 100px;
-  position:relative;
-  left: 10px;
-}
-
-p{
-  color: #fff;
-  font-size: 16px;
-  line-height: 15px;
-  position:relative;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  background-image: url("../img/SectionBackgrounds/sec-1.jpg");
+  background-attachment: fixed;
   
-}
-
-/* Set the size of the div element that contains the map */
-
-iframe{
-  position: relative;
- margin-right: 50px;
-  margin-top: 11%;
-  border: #e53945 solid 5px;
-  border-radius: 20px;
-  width: 500px; 
-  height: 500px;
-  box-shadow: 0 0 20px #e53945;
-}
-
-/* The counter effect of the site */
-
-.counters1::after {
-  font: 800 40px system-ui;
-  content: counter(count);
-  animation: counter 100s linear infinite alternate;
-  counter-reset: count 0;
-  color: white;
-}
-
-@keyframes counter {
-  10%  {counter-increment: count 116;}
-  5%  {counter-increment: count 102;}
-  0% {counter-increment: count 110;}
-  15% {counter-increment: count 195;}
-  20% {counter-increment: count 132;}
-  25% {counter-increment: count 140;}
-  30% {counter-increment: count 100;}
-  35% {counter-increment: count 157;}
-  80% {counter-increment: count 107;}
-  45% {counter-increment: count 195;}
-  50% {counter-increment: count 130;}
-  55% {counter-increment: count 117;}
-  60% {counter-increment: count 137;}
-  65% {counter-increment: count 142;}
-  70% {counter-increment: count 143;}
-  75% {counter-increment: count 123;}
-  40% {counter-increment: count 187;}
-  85% {counter-increment: count 112;}
-  90% {counter-increment: count 121;}
-  95% {counter-increment: count 113;}
-  100% {counter-increment: count 176;}
-}
-
-.counters2::after {
-  font: 800 40px system-ui;
-  content: counter(count);
-  animation: counter2 80s linear infinite alternate;
-  counter-reset: count 0;
-  color: white;
-}
-
-@keyframes counter2 {
-  0%  {counter-increment: count 17;}
-  5%  {counter-increment: count 14;}
-  10% {counter-increment: count 10;}
-  15% {counter-increment: count 18;}
-  20% {counter-increment: count 12;}
-  25% {counter-increment: count 10;}
-  30% {counter-increment: count 10;}
-  35% {counter-increment: count 11;}
-  40% {counter-increment: count 17;}
-  45% {counter-increment: count 15;}
-  50% {counter-increment: count 10;}
-  55% {counter-increment: count 12;}
-  60% {counter-increment: count 17;}
-  65% {counter-increment: count 12;}
-  70% {counter-increment: count 13;}
-  75% {counter-increment: count 13;}
-  80% {counter-increment: count 17;}
-  85% {counter-increment: count 12;}
-  90% {counter-increment: count 11;}
-  95% {counter-increment: count 13;}
-  100% {counter-increment: count 16;}
-}
-
-/* font of name changer */
-
-
-
- /* The info cards on the right */
- 
-.card{
-  position:relative;
-  right: -10%;
-  width: 290px;
-  height: 320px;
-  border-radius: 10px;
-  padding: 15px 25px;
-  display:inline-block;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.5s;
-  text-align:center;
-  box-shadow: 0 0 10px #e53945;
-  
-}
-
-.row{
-  display: flex;
-  height: 88%;
-  align-items: center;
-}
-
-.col{
-  flex-basis: 50%;
-}
-
-.card1{
-  background-image: url(../img/Cards/background.jpg);
-}
-
-.card2{
-  background-image: url(../img/Cards/background2.jpg);
-}
-
-.card3{
-  background-image: url(../img/Cards/background3.jpg);
-}
-
-.card4{
-  background-image: url(../img/Cards/background4.jpg);
-}
-
-.card:hover{
-  transform: translateY(-10px);
-}
-
-.card p{
-  text-shadow: 0 0 5px #000;
-  font-size: 10px;
-  text-align: center;
-}
-
-h5{
-  font-size: 15px;
-  color: #fff;
-  text-shadow: 0 0 5px #999;
-  text-align: center;
-}
-
-/* Sections */
-
-section{
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-}
-
-#sec-1{
-  width: 100%;
-  height: 110vh;
-  background-image: url(../img/SectionBackgrounds/sec-1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-#sec-2{
-  width: 100%;
-  height: 110vh;
-  background-image: url(../img/SectionBackgrounds/sec-2.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-#sec-3{
-  width: 100%;
-  height: 110vh;
-  background-image: url(../img/SectionBackgrounds/sec-3.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-#sec-4{
-  width: 100%;
-  height: 110vh;
-  background-image: url(../img/SectionBackgrounds/sec-4.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.cardbig{
-  position:relative;
-  top: 25%;
-  width: 390px;
-  height: 420px;
-  border-radius: 10px;
-  padding: 15px 25px;
-  display:inline-block;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.5s;
-  text-align:center;
-  box-shadow: 0 0 20px #e53945;
-}
-
-.BackgroundSec-1{
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/SectionBackgrounds/sec-1.jpg);
-}
-
-.cardbig:hover{
-  transform: translateY(-10px);
-}
-
-.Section-text{
-  color: #fff;
-  position: relative;
-  margin-left: 570px;
-  top: -15%;
-  text-shadow: 0 0 2px #fff;
-  font-size: 15px;
-}
-
-.Section-img img{
-  position: relative;
-  margin-left: 510px;
-  width: 60%;
-  height: 60%;
-  border: 6px solid #e53945;
-  border-radius: 15px;
-  margin-top: -125px;
-  box-shadow: 0 0 20px #e53945;
-}
-
-.Section-4-text{
-  color: #fff;
-  position: relative;
-  margin-left: 550px;
-  top: -10%;
-  font-size: 40px;
-  text-shadow: 0 0 5px #fff;
-  text-align: center;
-}
-
-#sequence{
-  position: relative;
-  margin-left: 830px;
-  font-size: 70px;
-  text-shadow: 0 0 5px #fff;
-  font-weight: bold;
-  top: -5%;
-  color: #fff;
-}
-
-/* The navigation dots on the right side */
-html{
-  scroll-behavior: smooth;
-}
-
-.navsidebar{
-  position: relative;
-  right: 1%;
-  position: fixed;
-}
-
-.navdotssec{
-  width: 20px;
-  height: 20px;
-  border: 6px solid white;
-  border-radius: 10px;
-  position: relative;
-  text-shadow: 0 0 5px #999;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: transform 0.5s;
-}
-
-.navdotssec:hover{
-  transform: translateX(+10px);
 }
 
 /* Navbar styling*/
@@ -363,140 +62,6 @@ html{
   width: 30px;
   height: 20px;
 }
-/* responsive changes */
-
-@media (max-width: 1400px) {
-  .card{
-  position:relative;
-    top: 25px;
-    right: -10%;
-  width: 220px;
-  height: 250px;
-  border-radius: 10px;
-  padding: 15px 25px;
-  display:inline-block;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.5s;
-  }
-  .counters1::after {
-    font: 400 20px system-ui;
-    content: counter(count);
-    animation: counter 100s linear infinite alternate;
-    counter-reset: count 0;
-    color: white;
-  }
-  .counters2::after {
-    font: 400 20px system-ui;
-    content: counter(count);
-    animation: counter2 100s linear infinite alternate;
-    counter-reset: count 0;
-    color: white;
-  }
-
-  
-}
-
-@media (max-width: 1320px) {
-  .card{
-  position:relative;
-    top: 25px;
-    right: -10%;
-  width: 190px;
-  height: 220px;
-  border-radius: 10px;
-  padding: 15px 25px;
-  display:inline-block;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.5s;
-  }
-  .counters1::after {
-    font: 400 20px system-ui;
-    content: counter(count);
-    animation: counter 100s linear infinite alternate;
-    counter-reset: count 0;
-    color: white;
-  }
-  .counters2::after {
-    font: 400 20px system-ui;
-    content: counter(count);
-    animation: counter2 100s linear infinite alternate;
-    counter-reset: count 0;
-    color: white;
-  }
-  iframe{
-    position: relative;
-    left: 30%;
-    margin-top: 22%;
-    border: white solid 5px;
-    border-radius: 20px;
-    width: 300px; 
-    height: 300px;
-    
-  }
-}
-
-@media (max-width: 1050px) {
-  .card{
-  position:relative;
-  right: 1%;
-  top: -5%;
-  width: 190px;
-  height: 180px;
-  border-radius: 10px;
-  padding: 15px 25px;
-  display:inline-block;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.5s;
-  }
-  .cardbig{
-    position:relative;
-    top: 25%;
-    width: 190px;
-    height: 300px;
-    border-radius: 10px;
-    padding: 15px 25px;
-    display:inline-block;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s;
-    text-align:center;
-  }
-  .card p{
-    text-shadow: 0 0 5px #000;
-    font-size: 7px;
-    text-align: center;
-  }
-  iframe{
-    position: relative;
-    left: 20%;
-    margin-top: 35%;
-    border: white solid 5px;
-    border-radius: 20px;
-    width: 200px; 
-    height: 200px;
-    
-  }
-  .navsidebar{
-    position: relative;
-    right: 5%;
-    position: fixed;
-  }
-}
 
 @media (max-width: 1300px) {
   .logo {
@@ -504,7 +69,7 @@ html{
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .logo {
     font-size: 30px;
     padding: 2vh 0;
@@ -517,7 +82,7 @@ html{
 
   .links{
     display: none;
-    background-color: #624388;
+    background-color: #305a6b;
     width: 100%;
   }
 
@@ -546,3 +111,729 @@ html{
 
 /* End of Navbar styling*/
 
+#welcome_text {
+  text-align: center;
+  color: #E63946;
+}
+
+@media (max-width: 1400px) {
+  #welcome_text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  #welcome_text {
+    font-size: 10px;
+  }
+}
+
+/* Page content styling*/
+
+.row {
+  margin-top: 20px;
+}
+
+.content1 {
+  position: relative;
+  display: flex;
+  color: #fff;
+  margin: 5vh;
+  padding: 30vw 2vw 2vw 2vw;
+  background-image: url("..\\Images/burgas_firedepartment.jpg");
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+.container1 {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  background-color: #305a6b;
+  padding: 10px 10px 10px 10px;
+  width: 30vw;
+  height: 180px;
+}
+
+.container2 {
+  position: absolute;
+  left: 31vw;
+  background-color: #A8DADC;
+  width: 20vw;
+  padding: 10px 10px 10px 10px;
+  width: 20vw;
+  height: 180px;
+}
+
+.container2 h2{
+  font-size: 25px;
+}
+
+.container2 p{
+  font-size: 17px;
+}
+
+.container2 img {
+  height: 15px;
+  width: 15px;
+}
+
+@media (max-width: 1600px)
+{
+  .container1 {
+    font-size: 17px;
+  }
+
+  .container2 h2{
+    font-size: 22px;
+  }
+
+  .container2 p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container1 {
+    font-size: 15px;
+  }
+
+  .container2 h2{
+    font-size: 20px;
+  }
+
+  .container2 p{
+    font-size: 14px;
+  }
+
+  .container2 img {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container1{
+    font-size: 10px;
+    height: 130px;
+  }
+
+  .container2{
+    height: 130px;
+  }
+
+  .container2 h2{
+    font-size: 13px;
+  }
+
+  .container2 p{
+    font-size: 12px;
+  }
+
+  .container2 img {
+    height: 8px;
+    width: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container1 {
+    font-size: 7px;
+    height: 100px;
+  }
+
+  .container2{
+    height: 100px;
+  }
+
+  .container2 h2{
+    font-size: 10px;
+  }
+
+  .container2 p{
+    font-size: 8px;
+  }
+
+  .container2 img {
+    height: 5px;
+    width: 5px;
+  }
+}
+
+/* End of content styling*/
+
+/* First section styling */
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col1 {
+  text-align: center;
+  margin-left: 5vw;
+  color: white;
+}
+
+.col1 h1{
+  font-size: 90px;
+}
+
+.col1 h3{
+  font-size: 50px;
+}
+
+.card{
+  position:relative;
+  right: -10%;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display:inline-block;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  text-align:center;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.card1{
+  background-image: url(../img/Cards/background.jpg);
+}
+
+.card2{
+  background-image: url(../img/Cards/background2.jpg);
+}
+
+.card3{
+  background-image: url(../img/Cards/background3.jpg);
+}
+
+.card4{
+  background-image: url(../img/Cards/background4.jpg);
+}
+
+.card p{
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}
+
+h5{
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  text-align: center;
+}
+
+@media (max-width: 1800px) 
+{
+  .col1 h1{
+    font-size: 60px;
+  }
+
+  .col1 h3{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1600px) 
+{
+  .card {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1500px) 
+{
+  .card {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 1400px) 
+{
+  .col1 h1{
+    font-size: 50px;
+  }
+
+  .col1 h3{
+    font-size: 30px;
+  }
+  .card {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) 
+{
+  .card {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* End of First Section styling */
+
+/* Counter effect */
+
+.counters1::after {
+  font: 800 40px system-ui;
+  content: counter(count);
+  animation: counter 100s linear infinite alternate;
+  counter-reset: count 0;
+  color: white;
+}
+
+@keyframes counter {
+  10%  {counter-increment: count 116;}
+  5%  {counter-increment: count 102;}
+  0% {counter-increment: count 110;}
+  15% {counter-increment: count 115;}
+  20% {counter-increment: count 132;}
+  25% {counter-increment: count 140;}
+  30% {counter-increment: count 100;}
+  35% {counter-increment: count 127;}
+  80% {counter-increment: count 107;}
+  45% {counter-increment: count 135;}
+  50% {counter-increment: count 130;}
+  55% {counter-increment: count 117;}
+  60% {counter-increment: count 137;}
+  65% {counter-increment: count 142;}
+  70% {counter-increment: count 143;}
+  75% {counter-increment: count 123;}
+  40% {counter-increment: count 187;}
+  85% {counter-increment: count 112;}
+  90% {counter-increment: count 121;}
+  95% {counter-increment: count 113;}
+  100% {counter-increment: count 116;}
+}
+
+.counters2::after {
+  font: 800 40px system-ui;
+  content: counter(count);
+  animation: counter2 80s linear infinite alternate;
+  counter-reset: count 0;
+  color: white;
+}
+
+@keyframes counter2 {
+  0%  {counter-increment: count 11;}
+  5%  {counter-increment: count 8;}
+  10% {counter-increment: count 10;}
+  15% {counter-increment: count 9;}
+  20% {counter-increment: count 5;}
+  25% {counter-increment: count 10;}
+  30% {counter-increment: count 10;}
+  35% {counter-increment: count 11;}
+  40% {counter-increment: count 13;}
+  45% {counter-increment: count 15;}
+  50% {counter-increment: count 10;}
+  55% {counter-increment: count 12;}
+  60% {counter-increment: count 7;}
+  65% {counter-increment: count 12;}
+  70% {counter-increment: count 13;}
+  75% {counter-increment: count 13;}
+  80% {counter-increment: count 17;}
+  85% {counter-increment: count 12;}
+  90% {counter-increment: count 11;}
+  95% {counter-increment: count 13;}
+  100% {counter-increment: count 11;}
+}
+
+/* End of Counter effect */
+
+/* Sections styling */
+
+.cardbig{
+  width: 390px;
+  height: 420px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display:inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  margin-left: 30px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  text-align:center;
+  color: #fff;
+}
+
+.cardbig:hover{
+  transform: translateY(-10px);
+}
+
+#sec-1, #sec-2, #sec-3, #sec-4{
+  padding-top: 190px;
+  padding-bottom: 120px; 
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.table {
+  margin-left: 40px;
+}
+
+.table h3 {
+  text-align: center;
+  color: white;
+}
+
+iframe {
+  margin-left: 60px;
+  height: 350px;
+  width: 350px;
+  border: 2px solid #E63946;
+  border-radius: 15px;
+}
+
+.Section-4{
+  font-size: 2vh;
+  margin-left: 250px;
+  text-align: center;
+  color: #e53945;
+}
+
+#sequence{
+  font-size: 70px;
+  text-shadow: 0 0 10px red;
+  font-weight: bold;
+  color: #e53945;
+}
+
+@media (max-width: 1700px) 
+{
+  .cardbig {
+    height: 350px;
+    width: 350px;
+  }
+
+  iframe {
+    margin-left: 30px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1500px) 
+{
+  .cardbig {
+    height: 300px;
+    width: 300px;
+  }
+
+  iframe {
+    margin-left: 0px;
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 1430px) 
+{
+  #sec-1, #sec-2, #sec-3, #sec-4{
+    flex-direction: column;
+  }
+  .table {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  iframe {
+    height: 350px;
+    width: 350px;
+  }
+
+  #sec-1, #sec-2, #sec-3, #sec-4{
+    padding-top: 120px;
+    padding-bottom: 0px; 
+  }
+
+  .Section-4{
+    font-size: 2vh;
+    margin-left: 0px;
+  }
+
+  #sequence{
+    font-size: 50px;
+  }
+}
+
+/* Malko da se pooprawi...*/
+
+/* The navigation dots on the right side (PROWERENO)*/
+html{
+  scroll-behavior: smooth;
+}
+
+.navsidebar{
+  position: relative;
+  right: 1%;
+  position: fixed;
+}
+
+.navdotssec{
+  width: 14px;
+  height: 14px;
+  border: 6px solid #fff;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 5px #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.5s;
+}
+
+.navdotssec:hover{
+  transform: translateX(+10px);
+}
+
+/* KRAI NA CONTENT CODE */
+
+/* Footer styling*/
+
+footer {
+  position: absolute;
+  background-color: #264653;
+  width: 100%;
+}
+
+footer table {
+  padding: 10px;
+}
+
+#coloumn1 {
+  padding-right: 55vw;
+}
+
+.f-logo img{
+  height: 100px;
+  width: 300px;
+}
+
+.f-links ul{
+  list-style: none;
+}
+
+.f-links a{
+  font-size: 2vh;
+  text-decoration: none;
+  color: #fff;
+}
+
+.f-links a:hover{
+  color: #E63946;
+}
+
+#coloumn2 {
+  color: #fff;
+  text-align: center;
+}
+
+.socials {
+  margin-right: 3vw;
+}
+
+.socials img{
+  width: 50px;
+  height: 50px;
+  margin-left: 1.5vw;
+}
+
+@media (max-width: 1400px)
+{
+  #coloumn1 {
+    padding-right: 45vw;
+  }
+}
+
+@media (max-width: 1100px)
+{
+  #coloumn1 {
+    padding-right: 30vw;
+  }
+
+  .f-logo img{
+    height: 80px;
+    width: 200px;
+  }
+
+  .f-links a {
+    font-size: 1.5vh;
+  }
+
+  .information {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px)
+{
+  #coloumn1 {
+    padding-right: 15vw;
+  }
+
+  .information {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px)
+{
+  #coloumn1 {
+    padding-right: 5vw;
+  }
+}
+
+/* End of Footer styling*/
+
+
+/* Stats styling*/
+
+.panel {
+  padding: 50px 100px 50px 80px;
+  width: 750px;
+  height: 400px;
+  background: #305a6b;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.panel-body {
+  display: flex;
+  height: 340px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 25%;
+  padding: 39px 0px 41px 26px;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+}
+.category span:first-child {
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.6;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.category span:last-child {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  position: relative;
+}
+ 
+.label {
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  width: 215px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.android-stats {
+  bottom: 155px;
+  right: 230px;
+}
+ 
+.ios-stats {
+  bottom: 83px;
+  left: 133px;
+}
+ 
+.windows-stats {
+  bottom: 133px;
+  right: 62px;
+}
+ 
+.dataset-1 {
+  animation: raise .8s linear 1;
+  transform-origin: bottom;
+}
+.dataset-2 {
+  animation: raise 1.6s linear 1;
+  transform-origin: bottom;
+}
+.dataset-3 {
+  animation: raise 1.8s linear 1;
+  transform-origin: bottom;
+}
+ 
+@media (max-width: 1900px)  {
+  .panel {
+    padding: 40px 90px 40px 30px;
+    width: 600px;
+    height: 350px;
+  }
+
+  .table h3 {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1700px)  {
+  .panel {
+    padding: 40px 90px 40px 30px;
+    width: 600px;
+    height: 350px;
+  }
+
+  .cardbig {
+    margin-left: 10px;
+  }
+
+  .table {
+    margin-left: 0px;
+  }
+}
+
+/* End of Stats styling*/
+
+.table table, .table th, .table td{
+  border-collapse: collapse;
+  border: 1px solid #E63946;
+  color: #FFF;
+}
+
+.table td{
+  padding: 5px;
+}
+
+#theader {
+  text-align: center;
+  background-color: #F5717A;
+}
+
+#trow {
+  background-color: #FF9DA4;
+}
