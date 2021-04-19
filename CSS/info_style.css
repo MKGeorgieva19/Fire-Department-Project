@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cabin', sans-serif;
-  background-image: url("../img/SectionBackgrounds/sec-1.jpg");
+  background-image: url("..\\Images/SectionBackgrounds/sec-1.jpg");
   background-attachment: fixed;
   
 }
@@ -304,19 +304,19 @@ body {
 }
 
 .card1{
-  background-image: url(../img/Cards/background.jpg);
+  background-image: url("..\\Images/Cards/background.jpg");
 }
 
 .card2{
-  background-image: url(../img/Cards/background2.jpg);
+  background-image: url("..\\Images/Cards/background2.jpg");
 }
 
 .card3{
-  background-image: url(../img/Cards/background3.jpg);
+  background-image: url("..\\Images/Cards/background3.jpg");
 }
 
 .card4{
-  background-image: url(../img/Cards/background4.jpg);
+  background-image: url("..\\Images/Cards/background4.jpg");
 }
 
 .card p{

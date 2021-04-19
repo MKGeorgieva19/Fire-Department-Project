@@ -1,11 +1,4 @@
-const toggleButton = document.getElementsByClassName('button')[0]
-const navbarLinks = document.getElementsByClassName('links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-
-var example = ['APenelope McNiel', 'Yarik Palmisano', 'Morteza Mottershead', 'Bibiana Bauers', 'Estève González' , 'Sibusiso Blackwood', 'Wina Seppä' , 'Cristiana Bleier', 'Borislav Dobos', 'Gunnvor Zupan'];
+var example = ['Красимир Стоянов', 'Иван Костадинов', 'Юлиян Филипов', 'Андрей Лилов', 'Христо Колев' , 'Чавдар Тръстиков', 'Джон Маклейн'];
 
         textSequence(0);
         function textSequence(i) {
