@@ -17,12 +17,11 @@ body {
   color: white;
 }
 
-.logo {
-  font-size: 40px;
-  margin: 1vw 2vw;
-  text-shadow: 0px -10px 11px #E63946;
+.logo img {
+  margin-left: 1vw;
+  height: 90px; 
+  width: 290px;
 }
-
 
 .links ul {
   margin: 0;
@@ -55,12 +54,6 @@ body {
   justify-content: space-between;
   width: 30px;
   height: 20px;
-}
-
-@media (max-width: 1300px) {
-  .logo {
-    font-size: 35px;
-  }
 }
 
 @media (max-width: 750px) {
