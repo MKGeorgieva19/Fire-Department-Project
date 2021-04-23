@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-:-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 body {
@@ -11,7 +11,6 @@ body {
   font-family: 'Cabin', sans-serif;
   background-image: url("..\\Images/SectionBackgrounds/sec-1.jpg");
   background-attachment: fixed;
-  
 }
 
 /* Navbar styling*/
