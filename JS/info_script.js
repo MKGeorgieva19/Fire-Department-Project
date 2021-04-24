@@ -2,10 +2,10 @@ const toggleButton = document.getElementsByClassName('button')[0]
 const navbarLinks = document.getElementsByClassName('links')[0]
 
 toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+    navbarLinks.classList.toggle('active')
 });
 
-var example = ['Красимир Стоянов', 'Иван Костадинов', 'Юлиян Филипов', 'Андрей Лилов', 'Христо Колев' , 'Чавдар Тръстиков', 'Джон Маклейн'];
+var example = ['Красимир Стоянов', 'Иван Костадинов', 'Юлиян Филипов', 'Андрей Лилов', 'Христо Колев', 'Чавдар Тръстиков', 'Джон Маклейн'];
 
 textSequence(0);
 
@@ -17,9 +17,7 @@ function textSequence(i) {
             textSequence(++i);
         }, 8000); // 1 second (in milliseconds)
 
-    } 
-
-    else if (example.length == i) { // Loop
+    } else if (example.length == i) { // Loop
         textSequence(0);
-    }           
+    }
 }

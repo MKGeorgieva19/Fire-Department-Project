@@ -1,148 +1,151 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Form</title>
-	<link href="..\CSS/form_style.css" rel="stylesheet" type="text/css"/>
+  <title>Form</title>
+  <link href="..\CSS/form_style.css" rel="stylesheet" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
   <script src="..\JS/form_script.js" defer></script>
 </head>
+
 <body>
 
   <!-- Navigation Bar -->
 
-	<nav class="navbar">
+  <nav class="navbar">
     <div class="logo"><img src="../Images/logo_bgremoved.png"></div>
 
-      <a href="#" class="button"><img src="..\Images/bars.png"></a>
+    <a href="#" class="button"><img src="..\Images/bars.png"></a>
 
-      <div class="links">
-        <ul>
-          <li><a href="..\index.html">Начало</a></li>
-          <li><a href="information.html">Информация</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-          <li><a href="form.html">Регистрация</a></li>
-        </ul>
+    <div class="links">
+      <ul>
+        <li><a href="..\index.html">Начало</a></li>
+        <li><a href="information.html">Информация</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+        <li><a href="form.html">Регистрация</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Form -->
+
+  <form action="mailto:firestation_project@abv.bg" method="POST" onsubmit="alertSubmissionMessage()">
+    <h1>Регистрация</h1>
+
+    <p>* Форма за регистриране на произшествие.</p>
+
+    <div class="registration_form">
+
+      <div class="inputfield">
+        <label for="name">Име</label>
+        <input type="text" name="name" id="name">
       </div>
-    </nav>
 
-    <!-- Form -->
+      <div class="inputfield">
+        <label for="address">Адрес*</label>
+        <textarea name="address" id="address" required></textarea>
+      </div>
 
-    <form action="mailto:firestation_project@abv.bg" method="POST" onsubmit="alertSubmissionMessage()">
-      <h1>Регистрация</h1>
+      <div class="inputfield">
+        <label for="accident_type">Тип произшествие*</label>
+        <input type="text" name="accident_type" id="accident_type" required>
+      </div>
 
-      <p>* Форма за регистриране на произшествие.</p>
+      <div class="inputfield">
+        <label for="date">Дата*</label>
+        <input type="date" id="date" name="date" required>
+      </div>
 
-      <div class="registration_form">
+      <div class="inputfield">
+        <label for="time">Час*</label>
+        <input type="time" id="time" name="time" required>
+      </div>
 
-        <div class="inputfield">
-          <label for="name">Име</label>
-          <input type="text" name="name" id="name">
-        </div>
-
-        <div class="inputfield">
-          <label for="address">Адрес*</label>
-          <textarea name="address" id="address" required></textarea>
-        </div> 
-
-        <div class="inputfield">
-          <label for="accident_type">Тип произшествие*</label>
-          <input type="text" name="accident_type" id="accident_type" required>
-        </div>   
-
-        <div class="inputfield">
-          <label for="date">Дата*</label>
-          <input type="date" id="date" name="date" required>
-        </div>
-
-        <div class="inputfield">
-          <label for="time">Час*</label>
-          <input type="time" id="time" name="time" required>
-        </div>
-
-        <div class="inputfield">
-          <label for="team">Екип*</label>
-          <div class="custom_select">
-            <select name="team" id="team" required>
-              <option value="default">Избери екип</option>
-              <option value="option1">Екип 1</option>
-              <option value="option2">Екип 2</option>
-              <option value="option3">Екип 3</option>
-              <option value="option3">Екип 4</option>
-              <option value="option3">Екип 5</option>
-            </select>
-          </div>
-        </div> 
-
-        <div class="inputfield">
-          <label for="vehicle">Автомобил/и*</label>
-          <div class="custom_select">
-            <select name="vehicle" id="vehicle" required>
-              <option value="default">Избери автомобил/и</option>
-              <option value="option1">Пожарна</option>
-              <option value="option2">Две Пожарни</option>
-              <option value="option3">Пожарна + Линейка</option>
-            </select>
-          </div>
-        </div> 
-
-        <div class="inputfield">
-          <label for="phone">Телефон</label>
-          <input type="text" name="phone" id="phone">
-        </div> 
-        
-        <div class="inputfield terms">
-            <label class="check" for="check">
-              <input type="checkbox" name="check">
-              <span class="checkmark"></span>
-            </label>
-            <p>Искам да получавам известия по имейл</p>
-         </div> 
-
-        <div class="inputfield">
-          <input type="submit" value="Регистрирай" class="btn" name="submit">
+      <div class="inputfield">
+        <label for="team">Екип*</label>
+        <div class="custom_select">
+          <select name="team" id="team" required>
+            <option value="default">Избери екип</option>
+            <option value="option1">Екип 1</option>
+            <option value="option2">Екип 2</option>
+            <option value="option3">Екип 3</option>
+            <option value="option3">Екип 4</option>
+            <option value="option3">Екип 5</option>
+          </select>
         </div>
       </div>
-  	</form> 
 
-    <!-- Footer -->
+      <div class="inputfield">
+        <label for="vehicle">Автомобил/и*</label>
+        <div class="custom_select">
+          <select name="vehicle" id="vehicle" required>
+            <option value="default">Избери автомобил/и</option>
+            <option value="option1">Пожарна</option>
+            <option value="option2">Две Пожарни</option>
+            <option value="option3">Пожарна + Линейка</option>
+          </select>
+        </div>
+      </div>
 
-    <footer>
-      <table>
-        <tr>
-          <td id="coloumn1">
-            <div class="f-logo"><img src="..\Images/logo_bgremoved.png"></div>
+      <div class="inputfield">
+        <label for="phone">Телефон</label>
+        <input type="text" name="phone" id="phone">
+      </div>
 
-            <div class="f-links">
-              <ul>
-                <li><a href="form.html">Регистрация</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-                <li><a href="information.html#sec-3">Информация за опасности</a></li>
-                <li><a href="information.html#sec-1">Служители</a></li>
-                <li><a href="information.html#sec-4">Класации</a></li>
-              </ul>
-            </div>
-          </td>
+      <div class="inputfield terms">
+        <label class="check" for="check">
+          <input type="checkbox" name="check">
+          <span class="checkmark"></span>
+        </label>
+        <p>Искам да получавам известия по имейл</p>
+      </div>
 
-          <td id="coloumn2">
-            <div class="information">
-              <h4>Пожарна Община Бургас</h4>
-              <p>ул. "Александър Велики" 37В, 8000 Възраждане, Бургас</p>
-              <p>056 856 321</p>
-            </div>
+      <div class="inputfield">
+        <input type="submit" value="Регистрирай" class="btn" name="submit">
+      </div>
+    </div>
+  </form>
 
-            <div class="socials">
-              <ul>
-                <a href="https://www.facebook.com/" target="_blank"><img src="..\Images/facebook.png"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="..\Images/twitter.png"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="..\Images/insta.png"></a>
-              </ul>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </footer>
+  <!-- Footer -->
+
+  <footer>
+    <table>
+      <tr>
+        <td id="coloumn1">
+          <div class="f-logo"><img src="..\Images/logo_bgremoved.png"></div>
+
+          <div class="f-links">
+            <ul>
+              <li><a href="form.html">Регистрация</a></li>
+              <li><a href="contact.html">Контакти</a></li>
+              <li><a href="information.html#sec-3">Информация за опасности</a></li>
+              <li><a href="information.html#sec-1">Служители</a></li>
+              <li><a href="information.html#sec-4">Класации</a></li>
+            </ul>
+          </div>
+        </td>
+
+        <td id="coloumn2">
+          <div class="information">
+            <h4>Пожарна Община Бургас</h4>
+            <p>ул. "Александър Велики" 37В, 8000 Възраждане, Бургас</p>
+            <p>056 856 321</p>
+          </div>
+
+          <div class="socials">
+            <ul>
+              <a href="https://www.facebook.com/" target="_blank"><img src="..\Images/facebook.png"></a>
+              <a href="https://twitter.com/" target="_blank"><img src="..\Images/twitter.png"></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="..\Images/insta.png"></a>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </footer>
 
 </body>
+
 </html>

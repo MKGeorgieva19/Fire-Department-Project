@@ -1,341 +1,331 @@
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Cabin', sans-serif;
-  background-color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
 }
+
 
 /* Navbar styling*/
 
 .navbar {
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #264653;
-  color: white;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #264653;
+    color: white;
 }
 
 .logo img {
-  margin-left: 1vw;
-  height: 70px; 
-  width: 270px;
+    margin-left: 1vw;
+    height: 70px;
+    width: 270px;
 }
 
 .links ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .links li {
-  list-style: none;
+    list-style: none;
 }
 
 .links li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 3.5vh 3vw;
-  display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 3.5vh 3vw;
+    display: block;
 }
 
 .links li:hover {
-  background-color: #E63946;
+    background-color: #E63946;
 }
 
 .button {
-  position: absolute;
-  top: 3.5vh;
-  right: 4vw;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
+    position: absolute;
+    top: 3.5vh;
+    right: 4vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
 }
 
 @media (max-width: 1300px) {
-  .logo img {
-    height: 60px; 
-    width: 220px;
-  }
+    .logo img {
+        height: 60px;
+        width: 220px;
+    }
 }
 
 @media (max-width: 850px) {
-  .logo img {
-    height: 50px; 
-    width: 180px;
-  }
+    .logo img {
+        height: 50px;
+        width: 180px;
+    }
 }
-
 
 @media (max-width: 750px) {
-  .logo img {
-    height: 80px; 
-    width: 280px;
-  }
-
-  .button{
-    top: 3.5vh;
-    display: flex;
-  }
-
-  .links{
-    display: none;
-    background-color: #305a6b;
-    width: 100%;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .links li {
-    text-align: center;
-  }
-
-  .links li a {
-    padding: 2vh 1vw;
-  }
-
-  .links.active {
-    display: flex;
-  }
+    .logo img {
+        height: 80px;
+        width: 280px;
+    }
+    .button {
+        top: 3.5vh;
+        display: flex;
+    }
+    .links {
+        display: none;
+        background-color: #305a6b;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .links li {
+        text-align: center;
+    }
+    .links li a {
+        padding: 2vh 1vw;
+    }
+    .links.active {
+        display: flex;
+    }
 }
 
+
 /* End of Navbar styling*/
+
 
 /* Form styling*/
 
 form {
-  max-width: 600px;
-  width: 100%;
-  margin: 20px auto;
-  padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
 }
 
 form h1 {
-  text-align: center;
-  font-size: 30px;
-  color: #E63946;
-  text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #E63946;
+    text-transform: uppercase;
 }
 
 form p {
-  font-size: 15px;
-  text-align: center;
-  color: #757575;
-  font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    color: #757575;
+    font-style: italic;
 }
 
 .registration_form {
-  width: 100%;
+    width: 100%;
 }
 
-.registration_form .inputfield{
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
+.registration_form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .registration_form .inputfield label {
-  width: 200px;
-  color: #707070;
+    width: 200px;
+    color: #707070;
 }
 
 .registration_form .inputfield input,
-.registration_form .inputfield textarea{
-  width: 100%;  
-  border: 1px solid #d5dbd9;
-  font-size: 1.7vh;
-  padding: 8px 10px;
-  border-radius: 5px;
+.registration_form .inputfield textarea {
+    width: 100%;
+    border: 1px solid #d5dbd9;
+    font-size: 1.7vh;
+    padding: 8px 10px;
+    border-radius: 5px;
 }
 
 textarea {
-  height: 15vh;
+    height: 15vh;
 }
 
 .custom_select {
-  width: 100%;
-  height: 40px;
-  position: relative;
+    width: 100%;
+    height: 40px;
+    position: relative;
 }
 
-.custom_select:before{
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 10px;
-  border: 8px solid;
-  border-color: #d5dbd9 transparent transparent transparent;
+.custom_select:before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
 }
 
-.custom_select select{
-  cursor: pointer;
-  -webkit-appearance: none;
-  width: 100%;
-  height: 100%;
-  padding: 8px 10px;
-  font-size: 1.5vh;
-  border: 1px solid #d5dbd9;
-  border-radius: 5px;
+.custom_select select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    font-size: 1.5vh;
+    border: 1px solid #d5dbd9;
+    border-radius: 5px;
 }
 
-.inputfield p{
-  font-size: 14px;
-  color: #757575;
-  margin-left: 1vw;
+.inputfield p {
+    font-size: 14px;
+    color: #757575;
+    margin-left: 1vw;
 }
 
-form .registration_form .inputfield .check{
-  width: 15px;
-  height: 15px;
-  position: relative;
-  display: block;
-  cursor: pointer;
+form .registration_form .inputfield .check {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
 }
 
-.check input[type="checkbox"]{
-  position: absolute;
-  opacity: 0;
+.check input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
 }
 
-.checkmark{
-  width: 15px;
-  height: 15px;
-  border: 1px solid #E63946;
-  display: block;
+.checkmark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #E63946;
+    display: block;
 }
 
-.check input[type="checkbox"]:checked ~ .checkmark{
-  background: #ea5b66;
+.check input[type="checkbox"]:checked~.checkmark {
+    background: #ea5b66;
 }
 
-.btn{
-  width: 100%;
-  padding: 8px 10px;
-  font-size: 1.7vh; 
-  border: none;
-  background: #E63946;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
+.btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1.7vh;
+    border: none;
+    background: #E63946;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-form .registration_form .inputfield .btn:hover{
-  background: #ea5b66;
+form .registration_form .inputfield .btn:hover {
+    background: #ea5b66;
 }
 
 @media (max-width: 700px) {
-  form {
-    width: 80%;
-  }
+    form {
+        width: 80%;
+    }
 }
 
+
 /* End of Form styling*/
+
 
 /* Footer styling*/
 
 footer {
-  position: absolute;
-  background-color: #264653;
-  width: 100%;
+    position: absolute;
+    background-color: #264653;
+    width: 100%;
 }
 
 footer table {
-  padding: 10px;
+    padding: 10px;
 }
 
 #coloumn1 {
-  padding-right: 55vw;
+    padding-right: 55vw;
 }
 
-.f-logo img{
-  height: 100px;
-  width: 300px;
+.f-logo img {
+    height: 100px;
+    width: 300px;
 }
 
-.f-links ul{
-  list-style: none;
+.f-links ul {
+    list-style: none;
 }
 
-.f-links a{
-  font-size: 2vh;
-  text-decoration: none;
-  color: #fff;
+.f-links a {
+    font-size: 2vh;
+    text-decoration: none;
+    color: #fff;
 }
 
-.f-links a:hover{
-  color: #E63946;
+.f-links a:hover {
+    color: #E63946;
 }
 
 #coloumn2 {
-  color: #fff;
-  text-align: center;
+    color: #fff;
+    text-align: center;
 }
 
 .socials {
-  margin-right: 3vw;
+    margin-right: 3vw;
 }
 
-.socials img{
-  width: 50px;
-  height: 50px;
-  margin-left: 1.5vw;
+.socials img {
+    width: 50px;
+    height: 50px;
+    margin-left: 1.5vw;
 }
 
-@media (max-width: 1400px)
-{
-  #coloumn1 {
-    padding-right: 45vw;
-  }
+@media (max-width: 1400px) {
+    #coloumn1 {
+        padding-right: 45vw;
+    }
 }
 
-@media (max-width: 1100px)
-{
-  #coloumn1 {
-    padding-right: 30vw;
-  }
-
-  .f-logo img{
-    height: 80px;
-    width: 200px;
-  }
-
-  .f-links a {
-    font-size: 1.5vh;
-  }
-
-  .information {
-    font-size: 15px;
-  }
+@media (max-width: 1100px) {
+    #coloumn1 {
+        padding-right: 30vw;
+    }
+    .f-logo img {
+        height: 80px;
+        width: 200px;
+    }
+    .f-links a {
+        font-size: 1.5vh;
+    }
+    .information {
+        font-size: 15px;
+    }
 }
 
-@media (max-width: 800px)
-{
-  #coloumn1 {
-    padding-right: 15vw;
-  }
-
-  .information {
-    font-size: 13px;
-  }
+@media (max-width: 800px) {
+    #coloumn1 {
+        padding-right: 15vw;
+    }
+    .information {
+        font-size: 13px;
+    }
 }
 
-@media (max-width: 600px)
-{
-  #coloumn1 {
-    padding-right: 5vw;
-  }
+@media (max-width: 600px) {
+    #coloumn1 {
+        padding-right: 5vw;
+    }
 }
+
 
 /* End of Footer styling*/
