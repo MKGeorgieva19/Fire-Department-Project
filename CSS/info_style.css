@@ -503,6 +503,11 @@ h5{
   color: white;
 }
 
+#table2 {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
 iframe {
   margin-left: 60px;
   height: 350px;
@@ -547,13 +552,13 @@ iframe {
   }
 
   iframe {
-    margin-left: 0px;
+    margin-left: 10px;
     height: 250px;
     width: 250px;
   }
 }
 
-@media (max-width: 1430px) 
+@media (max-width: 1350px) 
 {
   #sec-1, #sec-2, #sec-3, #sec-4{
     flex-direction: column;
