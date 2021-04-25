@@ -363,6 +363,12 @@ h5 {
 }
 
 @media (max-width: 600px) {
+    .col1 h1 {
+        font-size: 32px;
+    }
+    .col1 h3 {
+        font-size: 15px;
+    }
     .card {
         height: 150px;
         width: 150px;
