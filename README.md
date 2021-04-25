@@ -1,6 +1,6 @@
 # Fire-Department-Project
 ### Team: The Firestarters
-![Team Logo](/Images/logo.png)
+![Team Logo](/Images/logo_bgremoved2.png)
 ## Team members:
 * Alexander Klingenberg 9A - Back-end Developer - Aklingenberg19@codingburgas.bg
 * Teodor Karchev 9B - Designer - TTKarchev19@codingburgas.bg
